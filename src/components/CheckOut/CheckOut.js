@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../UI/Button/Button';
 
-class OrderSummary extends Component {
+class CheckOut extends Component {
         state={
             myOrders:[]
         }
@@ -31,4 +31,4 @@ class OrderSummary extends Component {
     }
 }
 
-export default OrderSummary;
+export default CheckOut;

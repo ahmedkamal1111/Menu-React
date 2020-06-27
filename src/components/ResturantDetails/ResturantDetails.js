@@ -1,7 +1,7 @@
 import React ,{Component} from 'react';
 import axios from "axios";
 import classes from './ResturantDetails.css';
-import OrderSummary from '../OrderSummary/OrderSummary';
+import CheckOut from '../CheckOut/CheckOut';
 import Modal from '../UI/Modal/Modal';
 const token = 'Bearer omiF8ohyVtGOn_oduvIZwV0fygF-4PRHqbj2xefRCXKdZY9Mte-GsKWQbxe0hpmXj3TOUsBFwQN0zmeo8CNAEd9lWNDNPlQqYlVwUwvh270BDpy3eeuvB5b8tBPgXnYx';
 class ResturantDetails extends Component {
@@ -33,9 +33,7 @@ class ResturantDetails extends Component {
         purchaseCancelHandler = () => {
             this.setState( { purchasing: false } );
         }
-        purchaseContinueHandler = () => {
-        alert('You Continue');
-        }
+
       render () {
           let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
           if ( this.props.match.params.id ) {
@@ -75,14 +73,13 @@ class ResturantDetails extends Component {
   
               );
           }
-         let orderSummary= <OrderSummary     
+         let checkOut= <CheckOut     
                  purchaseCancelled={this.purchaseCancelHandler}
-                 purchaseContinued={this.purchaseContinueHandler} 
                  order={this.state.loadedPost}  />
           return (
          <div>
          <Modal show={this.state.purchasing}modalClosed={this.purchaseCancelHandler}>
-            {orderSummary}
+            {checkOut}
          </Modal>
           {post} 
           </div>     
