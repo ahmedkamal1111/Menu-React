@@ -1,0 +1,27 @@
+.Background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../../assets/images/Huge-Backgrounds-6.jpg) ;
+    background-size: 100% 92%;
+    background-position: bottom;
+    height: 92.3vh;
+    background-attachment: fixed;
+    margin-top: -2%;
+  }
+  .h1{
+  font-weight: 300px;
+  font-size: 40px;
+  color:rgb(241, 162, 14);
+  margin-bottom: 50px;
+}
+  .About{
+    margin-left: 17%;
+      width: 63%;
+      text-align: center;
+      color:white ;
+      position: absolute;
+      top: 16%;
+      font-size: 19px;
+      line-height: 0.9cm;
+      font-weight: 300px;
+      letter-spacing: .5px;
+  }
