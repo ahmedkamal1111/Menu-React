@@ -54,21 +54,32 @@ h3 {
 
   .a
 {
-      width:18%;
-      margin-left:10%;
-      float: left;
+    /* width:18%;
+    margin-left:10%;
     display: block;
     text-align: center;
     font-weight: 400;
     font-size: 21px;
     padding: 10px 30px;
     text-decoration: none;
-    margin-top: -2.9%;
+    border-radius: 200px;
+    transition: 0.2s, border 0.2s, color 0.2s;
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-top: -3%; */
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-left: -125%;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
     color: #e67e22;
     border: 1px solid #e67e22;
-
+    width:19%;
+    height: 35px;
   }
   .a:hover,
   .a:active {
@@ -84,13 +95,14 @@ h3 {
     font-size: 21px;
     padding: 10px 30px;
     text-decoration: none;
-    margin-left: 14%;
+    margin-left: 50%;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
     background-color: #e67e22;
     color: #fff;
     border: 1px solid #e67e22;
     width:25%;
+    height: 55px;
     float: left;
 
   }

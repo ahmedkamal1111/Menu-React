@@ -55,7 +55,8 @@ class ResturantDetails extends Component {
 
                      <br/>
                      <button className={classes.Order}onClick={this.purchaseHandler} >Order Now</button>
-                     <br/><a href={this.state.loadedPost.url} className={classes.a}>More Meals</a><br/>
+                     <a href={this.state.loadedPost.url} className={classes.a}>More Meals</a>
+                     <br/>
                      <br/>
                      </div>
                      <img className={classes.img} src={this.state.loadedPost.image_url} />

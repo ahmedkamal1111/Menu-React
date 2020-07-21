@@ -13,11 +13,9 @@
 .DrawerToggle div {
     width: 90%;
     height: 3px;
-    background-color: white;
+    background-color: black;
+}
+.icon{
+height: 40px;
 }
 
-@media (min-width: 500px) {
-    .DrawerToggle {
-        display: none;
-    }
-}
